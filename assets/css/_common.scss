@@ -1,0 +1,258 @@
+#cts-content {
+    $regal-blue: #00417B;
+    $mine-shaft: #333333;
+    $gray: #878B8E;
+    $white: #ffffff;
+    $black: #000000;
+    .w-80{
+        width: 80% !important;
+    }
+    .page-title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 36px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-family: "Johnson Display Regular";
+    }
+    .date-updated{
+        margin-bottom: 44px;
+        font-size: 14px;
+        display: block;
+    }
+
+    #content {
+        .regal-blue {
+            color: $regal-blue !important;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 36px;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 32px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 28px;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 18px;
+            line-height: 22px;
+            font-family: Johnson Text Regular;
+        }
+
+        .footnote {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 30px;
+            line-height: 18px;
+        }
+
+        p.highlight {
+            font-weight: 600;
+        }
+        .border-color-white-left{
+            border-left-color: #ffffff;
+        }
+        .border-color-white-right{
+            border-right-color: #ffffff;
+        }
+
+        ul {
+            padding-left: 15px;
+            list-style: none;
+
+            li {
+                font-size: 18px;
+                line-height: 22px;
+                position: relative;
+                font-family: Johnson Text Regular;
+                margin-bottom: 14px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 9px;
+                    left: -15px;
+                    font-size: 26px;
+                    border-radius: 50%;
+                    background-color: $regal-blue;
+                    border: 1px solid $regal-blue;
+                    width: 7px;
+                    height: 7px;
+                }
+
+                ul {
+                    margin-top: 10px;
+                    padding-left: 15px;
+
+                    li {
+                        margin-bottom: 10px;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 7px;
+                            left: -15px;
+                            font-size: 26px;
+                            border-radius: 50%;
+                            background-color: $white;
+                            border: 1px solid $regal-blue;
+                            width: 7px;
+                            height: 7px;
+                        }
+                        ul{
+                            li{
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 7px;
+                                    left: -15px;
+                                    font-size: 26px;
+                                    border-radius: 0;
+                                    background-color: $regal-blue;
+                                    border: 1px solid $regal-blue;
+                                    width: 7px;
+                                    height: 7px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .table_header_text{
+            max-width: 940px;
+            margin: 0 auto !important;
+            margin-bottom: 20px !important;
+        }
+        .table-header {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+            color: $mine-shaft;
+        }
+
+        .table-subheader {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 26px;
+            color: $regal-blue;
+        }
+        .table-bordered {
+            border: 1px solid #333333;
+        }
+
+        .bg-blue {
+            background-color: $regal-blue !important;
+        }
+
+        .bg-gray {
+            background-color: $mine-shaft;
+        }
+        .bg-light-gray {
+            background-color: $gray;
+        }
+        .bg-gradient {
+            background: #878b8e; /* Old browsers */
+            background: -moz-linear-gradient(left,  #878b8e 0%, #00417b 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  #878b8e 0%,#00417b 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  #878b8e 0%,#00417b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878b8e', endColorstr='#00417b',GradientType=1 ); /* IE6-9 */
+
+        }
+
+        table {
+            tr {
+                td {
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-family: Johnson Text Regular;
+                    vertical-align: middle;
+                    color: $mine-shaft;
+                    border-color: $black;
+                    border-bottom-width: 1px;
+                }
+
+                th {
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    color: $mine-shaft;
+                    vertical-align: middle;
+                    border-color: $black;
+                    border-bottom-width: 1px;
+                    background-color: $white;
+                }
+            }
+        }
+        .ref_table{
+            border: 2px solid $mine-shaft;
+            border-top: 0;
+            margin-top: -1px;
+            tbody{
+                tr{
+                    td{
+                        padding: 10px;
+                        border: 0;
+                    }
+                }
+            }
+        }
+        #popup-content {
+            .modal-dialog {
+                max-width: 900px;
+                padding: 10px;
+                .modal-header {
+                    border-bottom: 1px solid #707070;
+                    padding-right: 60px;
+                    .close {
+                        position: absolute;
+                        right: 30px;
+                        top: 15px;
+                        width: 32px;
+                        height: 32px;
+                        opacity: 1;
+                        &::after, &::before{
+                            position: absolute;
+                            left: 15px;
+                            content: ' ';
+                            height: 33px;
+                            width: 3px;
+                            background-color: #333;
+                        }
+                        &:before {
+                            transform: rotate(45deg);
+                        }
+                        &:after {
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

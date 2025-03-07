@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Johnson Display Regular";
+    src: url("../fonts/JohnsonDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Johnson Display Regular";
+    src: url("../fonts/JohnsonDisplay-Medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Karbon";
+    src: url("../fonts/Karbon-Semibold.ttf") format("truetype");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "Johnson Display Regular";
+    src: url("../fonts/JohnsonDisplay-Bold.ttf") format("truetype");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Johnson Text Regular";
+    src: url("../fonts/JohnsonText-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Johnson Text Regular";
+    src: url("../fonts/JohnsonText-Medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Karbon";
+    src: url("../fonts/Karbon-Semibold.ttf") format("truetype");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "Johnson Text Regular";
+    src: url("../fonts/JohnsonText-Bold.ttf") format("truetype");
+    font-weight: 700;
+  }
+  #cts-content .container-fluid.full-width {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 112.5rem;
+  }
+  @media (min-width: 1440px) {
+    #cts-content .container-fluid.full-width {
+      width: 80%;
+    }
+  }
+  @media (max-width: 992px) {
+    #cts-content .mobile-navigation .navbar .navbar-heading{
+      max-width: 90% !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #cts-content .page-title {
+      font-size: 30px!important;
+    }
+  }
